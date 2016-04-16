@@ -7,9 +7,9 @@
  
 // Pin 13 has an LED connected on most Arduino boards.
 // give it a name:
-int analogOutPin3 = 11;
-int analogOutPin2 = 5;
-int analogOutPin1 = 3;
+int OutPin3 = 11;
+int OutPin2 = 5;
+int OutPin1 = 3;
 
 const float pi = 3.14;
 float timePeriod = 10;
@@ -64,9 +64,9 @@ void loop() {
   float normalisedTime=cycles-int(cycles);
 
   
-  displayfunctionSaw(normalisedTime,analogOutPin3);
-  displayfunctionS(normalisedTime+0.5,analogOutPin2);
-  displayfunctionSM(normalisedTime+0.3,analogOutPin1);
+  displayfunctionSaw(normalisedTime,OutPin3);
+  displayfunctionS(normalisedTime+0.5,OutPin2);
+  displayfunctionSM(normalisedTime+0.3,OutPin1);
   
   delay(20); 
   
